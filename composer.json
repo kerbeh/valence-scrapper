@@ -1,0 +1,19 @@
+{
+    "name": "ktrist/valence-scrapper",
+    "description": "Package to scrape the D2L Valence API docs and generate a librrrary of php to consume the api",
+    "type": "library",
+    "require": {
+        "nette/php-generator": "2.6.4",
+        "jawira/case-converter": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Tristan Kirby",
+            "email": "tristan.kirby@deakin.edu.au"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16@dev"
+    }
+}

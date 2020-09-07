@@ -1,0 +1,9 @@
+/node_modules/*
+/config/autoload/local.php
+.DS_Store
+**/.DS_Store
+/nbproject
+/vendor
+/Model
+/Service
+
