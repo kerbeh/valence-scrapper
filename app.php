@@ -22,7 +22,7 @@ class ApiScrapper
     {
         //Comment out this to get just one route for debugging
         $routeStems = $this->getRouteList();
-        //$routeStems = ["res/user.html"];
+        //$routeStems = ["res/enroll.html"];
         foreach ($routeStems as $routeStem) {
             $this->getResourceDocument($routeStem);
         }
@@ -97,6 +97,8 @@ class ApiScrapper
             ->addComment('@see ' . $pageUrl);
 
         foreach ($methods as $key => $method) {
+
+
 
             //Get api stema and verb
             $methodUrlAndVerb = $this->getApiStemandUrl($method["stem"]);
@@ -182,7 +184,7 @@ EOT;
 EOT;
             }
 
-            $methodBodyStandardRequest = "return new Request('GET', \$uri);";
+            $methodBodyStandardRequest = "return new Request('$verb', \$uri);";
 
             if (isset($requiredjsonParrams[0])) {
 
@@ -191,7 +193,7 @@ EOT;
                 $methodBodyJson = <<<EOT
 \$body = \$$jsonBodyName;
 \$headers = ["content-type" => 'application/json'];
-return new Request("PUT", \$uri, \$headers, \$body);
+return new Request("$verb", \$uri, \$headers, \$body);
 EOT;
 
                 $methodBody .= $methodBodyJson;

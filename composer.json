@@ -15,5 +15,16 @@
     "minimum-stability": "dev",
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16@dev"
+    },
+    "scripts": {
+        "build": [
+            "php app.php",
+            "php-cs-fixer fix ./Service",
+            "php-cs-fixer fix ./Model"
+        ],
+        "fix": [
+            "php-cs-fixer fix ./Service",
+            "php-cs-fixer fix ./Model"
+        ]
     }
 }
