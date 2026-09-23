@@ -1,4 +1,4 @@
-# Brightspace LMS Provider for OAuth 2.0 Client
+# Brightspace API Scrape API Docs and automaticly build a PHP wrapper
 [![Latest Version](https://img.shields.io/github/release-pre/kerbeh/oauth2-brightspace.svg?style=flat-square)](https://github.com/kerbeh/oauth-brightspace/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
